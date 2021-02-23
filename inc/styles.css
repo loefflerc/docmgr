@@ -1,0 +1,108 @@
+body {
+    background-color: #FDFDE7;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+#logo {
+    margin: 0px 20px;
+    padding: 0px 30px;
+    background-color: yellow;
+    border-bottom: 2px solid #DCDD00;
+    border-top: 2px solid #FFFF99;
+    border-right: 1px solid #DCDD00;
+    border-left: 1px solid #FFFF99;
+}
+
+#rahmen {
+    margin: 0px 20px;
+}
+
+#headline {
+    background-color: #F4E49F;
+    font-weight: bold;
+    font-size: 16px;
+    padding-left: 10%;
+	 padding-top: 2px;
+	 border-bottom: 2px solid #EED46A;
+	 border-top: 2px solid #F5EFC7;
+	 border-right: 1px solid #EED46A;
+	 border-left: 1px solid #F5EFC7;
+}
+
+#loginform {
+    background-image: url(img/lockk.gif);
+    font-size: 14px;
+    width: 260px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-top-color: #F5EFC7;
+    border-bottom-color: #EFC416;
+    border-left-color: #F5EFC7;
+    border-right-color: #EFC416;
+}
+
+#menu {
+    padding: 1px;
+    margin-bottom: 15px;
+}
+.menuitem {
+    display: inline;
+    margin: 2px;
+    font-size: 16px;
+}
+.menuitem a {
+    text-decoration: none;
+    color: gray;
+    background-color: transparent;
+    border: 1px dotted gray;
+    padding: 4px;
+}
+.menuitem a:hover {
+    text-decoration: none;
+    color: black;
+    background-color: #eee;
+    border: 1px solid black;
+    padding: 4px;
+}
+
+#main {
+    font-size: 14px;
+}
+.version {
+    font-style: italic;
+    margin-left: 20px;
+    margin-top: 0px;
+}
+
+#info {
+    color: #666;
+    font-size: 10px;
+    margin-top: -15px;
+    margin-bottom: 8px;
+    margin-left: 2px;
+}
+
+#legal {
+    margin-top: 40px;
+    font-size: 10px;
+    text-align: center;
+}
+
+.docimgneu {
+    display: inline;
+    margin-left: -50px;
+    margin-right: 7px;
+
+}
+.udocentry {
+    border-top: 1px solid #DDD;
+    padding-top: 5px;
+    margin-bottom: 10px;
+    list-style-type: none;
+    display: block;
+}

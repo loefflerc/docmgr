@@ -1,0 +1,31 @@
+<!-- $Id: admin_user.tpl.html,v 1.1.1.1 2004/04/14 17:31:03 chris Exp $ -->
+<p><a href="#" onclick="javascript:nw=window.open('insert_user.php','Benutzer_anlegen','height=500,width=550,location=no,scrollbars=yes,menubars=no,toolbars=no,resizable=yes');return false;">neuen Benutzer anlegen</a></p>
+<!-- begin Admin Tabelle User -->
+<p>Folgende Benutzer sind in der Datenbank eingetragen:</p>
+<table cellspacing="1" cellpadding="5" border="1" >
+<tr>
+
+ <th><a href="admin.php?mode=user&sort=name" title="Alphabethisch sortieren">Name</a></th>
+ <th><a href="admin.php?mode=user&sort=vorname" title="Alphabethisch sortieren">Vorname</a></th>
+ <th>email</th>
+ <th><a href="admin.php?mode=user&sort=bemerk" title="Alphabethisch sortieren">Bemerkung</a></th>
+ <th>Gruppe(n)</th>
+ <th><a href="admin.php?mode=user&sort=time" title="neueste zuerst anzeigen">ge&auml;ndert</a></th>
+ <th>&nbsp;</th>
+ <th>&nbsp;</th>
+</tr>
+<!-- BEGIN user -->
+<tr>
+
+ <td>{name}</td>
+ <td>{vorname}</td>
+ <td>{email}</td>
+ <td>{bemerkung}</td>
+ <td>{groups}</td>
+ <td>{timestamp}</td>
+ <td><a href="#" onClick="javascript:nw=window.open('{editurl}','Benutzer_bearbeiten','height=580,width=630,location=no,scrollbars=yes,menubars=no,toolbars=no,resizable=yes');return false;">bearbeiten</a></td>
+ <td><a href="#" onClick="javascript:nw=window.open('{delurl}','Benutzer_bearbeiten','height=300,width=450,location=no,scrollbars=yes,menubars=no,toolbars=no,resizable=yes');return false;">{deltext}</a>{space}</td>
+</tr>
+<!-- END user -->
+</table>
+<!-- end Admin Tabelle User-->

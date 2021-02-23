@@ -1,0 +1,98 @@
+<!-- begin edit file form -->
+<!-- $Id: editdocForm.tpl.html,v 1.1.1.1 2004/04/14 17:31:03 chris Exp $ -->
+<form action="{action}" name="editdoc" method="POST">
+  <input type="hidden" name="mode" value="edit">
+  <input type="hidden" name="dokid" value="{id}">
+  <table border="0" cellpadding="5" cellspacing="1" >
+    <tr>
+      <td width="20"></td>
+      <td>Dateiname</td>
+      <td width="20"></td>
+      <td>{file}</td>
+    </tr>
+    <tr>
+      <td width="20"> </td>
+      <td>Dokumentname</td>
+      <td width="20"> </td>
+      <td>
+        <input type="text" name="f_dokname" value="{dokname}" maxlength="60" size="25">
+      </td>
+    </tr>
+    <tr>
+      <td width="20"> </td>
+      <td>Version</td>
+      <td width="20"> </td>
+      <td>
+        <input type="text" name="f_version" value="{version}" maxlength="30" size="25">
+      </td>
+    </tr>
+    <tr>
+      <td width="20"> </td>
+      <td valign="top">Bemerkung</td>
+      <td> </td>
+      <td>
+        <textarea name="f_bemerkung" cols="30" rows="4">{bemerkung}</textarea>
+      </td>
+    </tr>
+    <tr>
+      <td width="20"> </td>
+      <td valign="top">Neu</td>
+      <td> </td>
+      <td>
+        <input type="radio" name="f_neu" value="1"{neu_ja}>Ja
+        <input type="radio" name="f_neu" value="0"{neu_nein}>Nein
+      </td>
+    </tr>    <tr>
+      <td width="20"></td>
+      <td valign="top">&nbsp;</td>
+      <td></td>
+      <td align="right">
+        <input type="submit" name="submit" value="Speichern">
+      </td>
+    </tr>
+    <tr>
+      <td width="20"> </td>
+      <td>Kundenrechte<br>
+        <select name="f_kperms" size="7">
+  {kperms}
+        </select>
+      </td>
+      <td>
+        <input type="submit" name="submit_add_knd" value="&lt;--">
+        <br>
+        <input type="submit" name="submit_add_knd" value="--&gt;">
+      </td>
+      <td> Kundenliste<br>
+        <select name="f_klist" size="7">
+ {klist}
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td width="20"></td>
+      <td> Gruppenrechte<br>
+        <select name="f_gperms" size="7">
+  {gperms}
+        </select>
+      </td>
+      <td>
+        <input type="submit" name="submit_add_grp" value="&lt;--">
+        <br>
+        <input type="submit" name="submit_add_grp" value="--&gt;">
+      </td>
+      <td> Gruppenliste<br>
+        <select name="f_glist" size="7">
+ {glist}
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td width="20"> </td>
+      <td colspan="3" align="right"> &nbsp;
+        <input type="button" name="cancel" value="Abbrechen" onClick="opener.location.reload();self.close();">
+      </td>
+    </tr>
+  </table>
+</form>
+{debug}
+<!-- end edit file form -->

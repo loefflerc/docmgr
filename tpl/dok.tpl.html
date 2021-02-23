@@ -1,0 +1,23 @@
+<!-- begin: dok.tpl.html -->
+<!-- $Id: dok.tpl.html,v 1.1.1.1 2004/04/14 17:31:03 chris Exp $ -->
+<div id="userdoc">
+
+    <!-- Ihre UserID ist {userid}, Username ist {username}
+    Gruppe: {group} -->
+
+    <p>Für Sie stehen folgende Dateien zum Download zur Verfügung: </p>
+    <ul>
+    <!-- BEGIN dok -->
+      <li class="udocentry">
+          {dl_neu}
+          <img align="middle" src="{icon}" width="16" height="16" alt="Dateityp: {suffix}" title="Dateityp: {suffix}" />&nbsp;
+          <a href="{download_dok_url}" title="{title_dok}">{name_dok}</a> ({groesse_dok})<br>
+          {version}
+          {bemerkung}
+      </li>
+    <!-- END dok -->
+
+  </ul>
+</div>
+
+<!-- end: dok.tpl.html -->

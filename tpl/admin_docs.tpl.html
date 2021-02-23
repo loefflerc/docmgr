@@ -1,0 +1,50 @@
+<!-- $Id: admin_docs.tpl.html,v 1.1.1.1 2004/04/14 17:31:02 chris Exp $ -->
+<!-- Upload Link -->
+<table cellspacing="1" cellpadding="5" border="0" >
+<tr>
+	<td width="40">&nbsp; </td>
+      <td class="tdborder">
+<form name="count_form1" method="post" >
+        Anzahl: <select name="f_filnum">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+</form><a href="#" onClick="javascript:nw=window.open('upload.php?f_filnum='+document.count_form1.f_filnum.value,'Upload','height=500,width=500,location=no,scrollbars=yes,menubars=no,toolbars=no,resizable=yes');return false;">Datei(en)
+        hochladen</a> </td>
+</tr>
+</table>
+<!-- begin Admin Tabelle Documents -->
+<p>Folgende Dateien sind in der Datenbank eingetragen:</p>
+<table cellspacing="1" cellpadding="5" border="1" >
+<tr>
+ <th><a href="admin.php?mode=doc&sort=name" title="alphabethisch sortieren">Datei</a></th>
+ <th>Version</th>
+ <th>Bemerkung</th>
+ <th>Berechtigung</th>
+ <th><a href="admin.php?mode=doc&sort=time" title="neueste zuerst anzeigen">ge&auml;ndert</a></th>
+ <th>&nbsp;</th>
+ <th>&nbsp;</th>
+ <th>&nbsp;</th>
+</tr>
+<!-- BEGIN doc -->
+<tr>
+ <td>{docname}<br><span style="font-size: smaller;color: #26A;">{docpfad}</span></td>
+ <td>{version}</td>
+ <td>{bemerkung}</td>
+ <td>{berechtigung}</td>
+ <td>{timestamp}</td>
+ <td><a href="#" onClick="javascript:nw=window.open('{permurl}','Berechtigungen','height=680,width=550,location=no,scrollbars=yes,menubars=no,toolbars=no,resizable=yes');return false;">bearbeiten</a></td>
+ <td><a href="#" onClick="javascript:nw=window.open('{replurl}','Berechtigungen','height=680,width=550,location=no,scrollbars=yes,menubars=no,toolbars=no,resizable=yes');return false;">ersetzen</a></td>
+ <td><a href="#" onClick="javascript:nw=window.open('{delurl}','Berechtigungen','height=450,width=450,location=no,scrollbars=yes,menubars=no,toolbars=no,resizable=yes');return false;">l&ouml;schen</a></td>
+</tr>
+<!-- END doc -->
+</table>
+<!-- end Admin Tabelle Documents-->

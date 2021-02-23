@@ -1,0 +1,25 @@
+<!-- begin Template statistik -->
+<!-- $Id: statistik.tpl.html,v 1.1.1.1 2004/04/14 17:31:03 chris Exp $ -->
+<p>&nbsp;&nbsp;Bitte im Men&uuml; ausw&auml;hlen</p>
+<p style="font-size: 14pt; font-weight: bold;">Download-Statistik</p>
+<!-- begin Tabelle statistik -->
+<table border="1" cellspacing="1" cellpadding="5">
+  <tr>
+    <th>Datei</th>
+    <th>vom </th>
+    <th>Bemerkung</th>
+    <th>Anzahl</th>
+    <th>&nbsp;</th>
+  </tr>
+  <!-- BEGIN docstat -->
+  <tr>
+    <td>{dokname}</td>
+    <td>{erstellt}</td>
+    <td>{bemerkung}</td>
+    <td>{dl_count}</td>
+    <td><a href="#" onclick="javascript:nw=window.open('{home}dl_user_stat.php?id={dokid}','DownloadStatistik','height=500,width=770,location=no,scrollbars=yes,menubars=no,toolbars=no,resizable=yes');return false;">genauer</a></td>
+  </tr>
+  <!-- END docstat -->
+</table>
+<!-- end Template statistik -->
+<p>{debug}</p>

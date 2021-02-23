@@ -1,0 +1,52 @@
+
+<form name="frmpasswd" method="post" action="{formaction}">
+  <table width="90%" border="0" cellspacing="0" cellpadding="2">
+    <tr>
+      <td>
+        <div align="right">Benutzername</div>
+      </td>
+      <td>&nbsp;</td>
+      <td>{username}</td>
+    </tr>
+    <tr>
+      <td>
+        <div align="right">Passwort</div>
+      </td>
+      <td>&nbsp;</td>
+      <td>
+        <input type="password" name="f_pass1" size="14" maxlength="12">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div align="right">Passwort wiederholen</div>
+      </td>
+      <td>&nbsp;</td>
+      <td>
+        <input type="password" name="f_pass2" size="14" maxlength="12">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div align="right"></div>
+      </td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>
+        <div align="right"></div>
+      </td>
+      <td>&nbsp; </td>
+      <td>
+        <input type="submit" name="submit" value="Speichern">
+        <input type="button" name="cancel" value="Abbrechen" onClick="self.close();">
+      </td>
+    </tr>
+  </table>
+</form>
+<script language="javascript" type="text/javascript">
+<!--
+    document.forms[0].f_pass1.focus();
+//-->
+</script>

@@ -1,0 +1,87 @@
+<!-- begin edituserForm.tpl -->
+<!-- $Id: edituserForm.tpl.html,v 1.1.1.1 2004/04/14 17:31:03 chris Exp $ -->
+<form name="useredit" method="post" action="{formaction}">
+  <input type="hidden" name="f_mode" value="{mode}">
+  <input type="hidden" name="f_uid" value="{uid}">
+  <table width="100%" border="0" cellspacing="5" cellpadding="1">
+    <tr>
+      <td>&nbsp;</td>
+      <td colspan="2">
+        <select name="f_anrede" size="1">
+          <option value="0"{sel_anrede}>Anrede</option>
+          <option value="1"{sel_anredeHerr}>Herr</option>
+          <option value="2"{sel_anredeFrau}>Frau</option>
+        </select>
+      </td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>Nachname,&nbsp;Vorname</td>
+      <td colspan="2">
+        <input type="text" name="f_nachname" maxlength="30" size="25" value="{nachname}">
+        <input type="text" name="f_vorname" maxlength="30" size="25" value="{vorname}">
+      </td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>Email</td>
+      <td colspan="2">
+        <input type="text" name="f_email" maxlength="60" size="40" value="{email}">
+      </td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>Benutzername</td>
+      <td colspan="2">
+        <input type="text" name="f_username" maxlength="15" size="15" value="{username}">
+      </td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>Passwort</td>
+      <td colspan="2">
+        <input type="password" name="f_passwort" size="12" maxlength="12" value="">
+      </td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>Passwort wiederholen</td>
+      <td colspan="2">
+        <input type="password" name="f_passwort2" maxlength="12" size="12">
+      </td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td valign="top">Bemerkung</td>
+      <td colspan="2">
+        <textarea name="f_bemerkung" rows="3" cols="45">{bemerkung}</textarea>
+      </td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td colspan="2">&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td valign="top">Gruppenmitgliedschaft</td>
+      <td valign="top">
+        <select name="f_selgroups[]" size="5" multiple>
+        {select_groups}
+        </select>
+      </td>
+        <td valign="top">  Kunde ist Mitglied bei markierten Gruppen.<br>
+      Mehrfachauswahl mit STRG-Taste und Klick.</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td colspan="2">
+        <input type="submit" name="submit" value="Speichern">
+        <input type="submit" name="submit" value="Abbrechen" onClick="opener.location.reload();self.close();">
+      </td>
+      <td>&nbsp;</td>
+    </tr>
+  </table>
+</form>
+<!--end edituserForm.tpl -->

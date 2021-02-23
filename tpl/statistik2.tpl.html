@@ -1,0 +1,28 @@
+<!-- $Id: statistik2.tpl.html,v 1.1.1.1 2004/04/14 17:31:03 chris Exp $ -->
+<p style="font-size: 14pt; font-weight: bold;">Download-Statistik</p>
+<p>f&uuml;r Datei <b>{dokname}</b>, zuletzt aktualisiert am {erstellt}<br>
+  Bemerkung: {bemerkung}
+  <!-- begin Tabelle statistik -->
+</p>
+<table border="1" cellspacing="1" cellpadding="5">
+  <tr>
+    <th>Datum</th>
+    <th>Version</th>
+    <th>Kunde</th>
+    <th>Host</th>
+    <th>Browser</th>
+  </tr>
+  <!-- BEGIN docstat -->
+  <tr>
+    <td>{zeit}</td>
+    <td>{version}</td>
+    <td>{name}</td>
+    <td>{host}</td>
+    <td><span title="{browser}">{browser}</span></td>
+  </tr>
+  <!-- END docstat -->
+</table>
+<!-- end Template statistik -->
+<p><a href="#" onClick="self.close();">Fenster schliessen</a></p>
+<p>{debug}</p>
+

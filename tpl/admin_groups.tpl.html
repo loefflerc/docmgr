@@ -1,0 +1,25 @@
+<!-- begin Admin Tabelle Gruppen -->
+<!-- $Id: admin_groups.tpl.html,v 1.1.1.1 2004/04/14 17:31:02 chris Exp $ -->
+<p><a href="#" onClick="javascript:nw=window.open('insert_group.php','Gruppe_anlegen','height=300,width=450,location=no,scrollbars=yes,menubars=no,toolbars=no,resizable=yes');return false;">Neue Gruppe anlegen</a></p>
+<p>Folgende Gruppen sind in der Datenbank eingetragen:</p>
+<table cellspacing="1" cellpadding="5" border="1" >
+  <tr>
+    <th><a href="admin.php?mode=group&sort=name" title="alphabethisch sortieren">Gruppenname</a></th>
+    <th>Bemerkung</th>
+    <th>Mitglieder</th>
+    <th><a href="admin.php?mode=group&sort=time" title="neueste zuerst anzeigen">ge&auml;ndert</a></th>
+    <th>&nbsp;</th>
+    <th>&nbsp;</th>
+  </tr>
+  <!-- BEGIN group -->
+  <tr>
+    <td>{bezeichnung}</td>
+    <td>{bemerkung}</td>
+    <td>{gusers}</td>
+    <td>{timestamp}</td>
+    <td><a href="#" onClick="javascript:nw=window.open('{gediturl}','Gruppe_bearbeiten','height=500,width=500,location=no,scrollbars=yes,menubars=no,toolbars=no,resizable=yes');return false">bearbeiten</a></td>
+    <td><a href="#" onClick="javascript:nw=window.open('{gdelurl}','Gruppe_anlegen','height=300,width=450,location=no,scrollbars=yes,menubars=no,toolbars=no,resizable=yes');return false;">l&ouml;schen</a></td>
+  </tr>
+  <!-- END group -->
+</table>
+<!-- end Admin Tabelle Gruppen-->
